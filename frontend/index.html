@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Set mode to api when the backend endpoint is ready. -->
+    <meta name="rewrite-mode" content="mock">
+    <meta name="rewrite-endpoint" content="/api/rewrite">
+    <title>SayLess — Say what you mean</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">S</span>SayLess</a>
+      </header>
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Find the right words</p>
+        <h1 id="page-title">Say what you mean.</h1>
+        <p class="tagline">Say what you mean, in the tone you want.</p>
+      </section>
+      <form id="rewrite-form" class="composer" novalidate>
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" placeholder="I need my teammate to finish their part…" aria-describedby="privacy-note" required></textarea>
+        <fieldset>
+          <legend>Choose your tone</legend>
+          <div class="tone-options">
+            <button type="button" class="tone-button" data-tone="professional" aria-pressed="true">Professional</button>
+            <button type="button" class="tone-button" data-tone="casual" aria-pressed="false">Casual</button>
+            <button type="button" class="tone-button" data-tone="diplomatic" aria-pressed="false">Diplomatic</button>
+            <button type="button" class="tone-button" data-tone="funny" aria-pressed="false">Funny</button>
+          </div>
+        </fieldset>
+        <button id="rewrite-button" type="submit" class="primary-button">Rewrite my message</button>
+        <p id="privacy-note" class="privacy-note">Messages are sent to an AI service to generate rewrites. Please don’t enter sensitive personal information.</p>
+        <p id="mock-notice" class="dev-notice" hidden>Demo mode: shows three fixed sample rewrites after one second. Your message and tone are not sent to an AI service.</p>
+      </form>
+      <noscript><p>Enable JavaScript to rewrite your message.</p></noscript>
+      <div id="results"></div>
+    </main>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SayLess output verification</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+      body { padding: 1.5rem; }
+      main { max-width: 70rem; margin-inline: auto; }
+      #test-summary, #test-report { overflow-wrap: anywhere; }
+      #test-report { padding-left: 1.5rem; }
+      #test-report li { margin-block: .4rem; }
+      #test-report [data-result="failed"] { font-weight: 700; }
+      #results { margin-top: 2rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>SayLess output verification</h1>
+      <p>Development checks only. Clipboard writes use temporary test doubles.</p>
+      <p id="test-summary" role="status">Running checks…</p>
+      <ol id="test-report"></ol>
+      <div id="results" aria-busy="false"></div>
+    </main>
+    <script type="module" src="./output-tests.js"></script>
+  </body>
+</html>

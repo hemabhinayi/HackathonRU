@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SayLess — Person 4 output preview</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./dev-output.js"></script>
+</head>
+<body>
+  <main>
+    <header class="site-header">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">s.</span> SayLess</div>
+      <p class="dev-notice">Person 4 development preview · Fixed sample data, no AI request. <a href="./tests/output-tests.html">Run output checks</a></p>
+    </header>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">A little help finding the words</p>
+      <h1 id="page-title">Same meaning.<br>A better way to say it.</h1>
+      <p class="tagline">Say what you mean, in the tone you want.</p>
+    </section>
+    <section class="composer" aria-label="Sample input styling">
+      <label for="sample-message">Your message</label>
+      <textarea id="sample-message" readonly aria-describedby="sample-note">I need my teammate to finish their part</textarea>
+      <fieldset>
+        <legend>The tone you're going for</legend>
+        <div class="tone-options" aria-label="Tone styling samples">
+          <button type="button" class="tone-button" data-tone="professional" aria-pressed="true">Professional</button>
+          <button type="button" class="tone-button" data-tone="casual" aria-pressed="false">Casual</button>
+          <button type="button" class="tone-button" data-tone="diplomatic" aria-pressed="false">Diplomatic</button>
+          <button type="button" class="tone-button" data-tone="funny" aria-pressed="false">Funny</button>
+        </div>
+      </fieldset>
+      <button type="button" class="primary-button" id="mock-rewrite">Preview sample rewrites</button>
+      <p class="privacy-note">Messages are sent to an AI service to generate rewrites in the finished app. Don't enter sensitive personal information. Messages and results aren't saved by the app.</p>
+      <p class="dev-notice" id="sample-note">This read-only sample checks styling and output behavior. Changing the tone only previews its selected style; the three sample rewrites stay the same.</p>
+      <div class="dev-tools" aria-label="Output checks">
+        <button type="button" id="preview-error">Preview request error</button>
+        <button type="button" id="preview-long">Preview long text</button>
+      </div>
+    </section>
+    <div id="results"></div>
+    <footer class="page-footer">A few good words can make all the difference.</footer>
+  </main>
+</body>
+</html>
