@@ -1,0 +1,16 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "role": "model",
+        "parts": [
+          { "text": "{\"rewrites\":[\"Could you let me know when you expect to finish your part?\",\"I wanted to check in on your section so we can stay on schedule.\",\"Can you share an update on your part of the project?\"]}" }
+        ]
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": { "promptTokenCount": 210, "candidatesTokenCount": 48, "totalTokenCount": 258 },
+  "modelVersion": "gemini-3.5-flash-lite"
+}

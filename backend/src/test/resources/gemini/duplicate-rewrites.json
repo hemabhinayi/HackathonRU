@@ -1,0 +1,11 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "role": "model",
+        "parts": [ { "text": "{\"rewrites\":[\"Same text.\",\"same   TEXT.\",\"Different text.\"]}" } ]
+      },
+      "finishReason": "STOP"
+    }
+  ]
+}

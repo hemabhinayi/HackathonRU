@@ -1,0 +1,30 @@
+name: backend
+
+on:
+  push:
+    paths: ["backend/**", "frontend/**", ".github/workflows/backend.yml"]
+  pull_request:
+    paths: ["backend/**", "frontend/**", ".github/workflows/backend.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    # Live Gemini is never enabled in CI; all provider tests use local fixtures.
+    env:
+      SAYLESS_AI_ENABLED: "false"
+      GEMINI_API_KEY: ""
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      # mvnw is tracked without the executable bit, so run it through sh.
+      - run: sh ./mvnw -B clean verify

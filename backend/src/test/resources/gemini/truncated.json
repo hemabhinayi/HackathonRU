@@ -1,0 +1,11 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "role": "model",
+        "parts": [ { "text": "{\"rewrites\":[\"Could you let me know when" } ]
+      },
+      "finishReason": "MAX_TOKENS"
+    }
+  ]
+}

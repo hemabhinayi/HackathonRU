@@ -1,0 +1,15 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "role": "model",
+        "parts": [
+          { "text": "Thinking about the tone first: SECRET-THOUGHT", "thought": true },
+          { "text": "{\"rewrites\":[\"First option.\"," },
+          { "text": "\"Second option.\",\"Third option.\"]}", "thoughtSignature": "c2ln" }
+        ]
+      },
+      "finishReason": "STOP"
+    }
+  ]
+}

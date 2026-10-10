@@ -1,0 +1,6 @@
+{
+  "promptFeedback": {
+    "blockReason": "SAFETY",
+    "safetyRatings": [ { "category": "HARM_CATEGORY_HARASSMENT", "probability": "HIGH" } ]
+  }
+}
