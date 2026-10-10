@@ -1,1 +1,17 @@
+com\sayless\api\RewriteController.class
+com\sayless\contract\RewriteRequest.class
+com\sayless\contract\ApiErrorResponse.class
+com\sayless\contract\ErrorCode.class
+com\sayless\contract\ApiErrorResponse$ApiError.class
+com\sayless\config\WebConfiguration.class
+com\sayless\contract\AiRewriteClient.class
+com\sayless\contract\Tone.class
 com\sayless\SaylessBackendApplication.class
+com\sayless\api\ApiExceptionHandler.class
+com\sayless\config\AiProperties.class
+com\sayless\config\AiConfiguration.class
+com\sayless\contract\RewriteLimits.class
+com\sayless\contract\RewriteResponse.class
+com\sayless\config\CorsProperties.class
+com\sayless\contract\RewriteService.class
+com\sayless\contract\RewriteException.class
