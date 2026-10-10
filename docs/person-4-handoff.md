@@ -1,5 +1,7 @@
 # Person 4 handoff — SayLess
 
+> Historical frontend handoff. Current backend ownership and planned Gemini integration are defined in [the four-person backend plan](backend-plan.md).
+
 Person 4's output module, responsive stylesheet, explicit mock preview, and browser checks are implemented. Person 3 has now integrated the main input page and request handler; see [Person 3 handoff](person-3-handoff.md) for local run instructions and API configuration. The backend still contains only the Spring Boot application scaffold, so real AI results remain pending with Persons 1 and 2.
 
 ## Files

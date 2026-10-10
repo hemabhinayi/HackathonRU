@@ -1,5 +1,7 @@
 # Person 4 Tasks — SayLess Output UI and Styling
 
+> This brief describes the completed frontend phase. The current Person 4 backend/integration assignment is in [the four-person backend plan](backend-plan.md) and [Person 4's new brief](backend/person-4-integration.md).
+
 ## 1. Instructions for the AI implementing this document
 
 Implement Person 4's contribution to SayLess: the output display, copy interactions, loading and error states, responsive styling, and the checks needed to demo those features. Follow the requirements below, using plain HTML, CSS, and JavaScript.

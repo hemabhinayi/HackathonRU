@@ -1,5 +1,7 @@
 # SayLess Frontend Plan
 
+> Historical frontend split. For the current four-person backend phase, use [the backend plan](backend-plan.md); its ownership and integration contract supersede the backend assignments below.
+
 The frontend is split between Person 3 (input side) and Person 4 (output side) so that you don't edit the same files.
 
 ## Setup (Person 3, about 5 minutes)

@@ -1,5 +1,7 @@
 # Person 3 handoff — SayLess
 
+> Historical frontend handoff. Current backend ownership and planned Gemini integration are defined in [the four-person backend plan](backend-plan.md).
+
 The input page and submit handler are complete. `frontend/index.html` uses Person 4's stylesheet and `frontend/script.js` imports the output module directly.
 
 - Title, tagline, labeled message field, four keyboard-accessible tone buttons, submit button, privacy note, and results container are present.
