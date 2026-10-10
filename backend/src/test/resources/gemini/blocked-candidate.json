@@ -1,0 +1,8 @@
+{
+  "candidates": [
+    {
+      "finishReason": "SAFETY",
+      "safetyRatings": [ { "category": "HARM_CATEGORY_HARASSMENT", "probability": "HIGH" } ]
+    }
+  ]
+}

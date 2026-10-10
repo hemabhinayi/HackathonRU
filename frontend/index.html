@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Set mode to api when the backend endpoint is ready. -->
-    <meta name="rewrite-mode" content="mock">
+    <!-- "api" calls the backend; set to "mock" only for frontend-only development. -->
+    <meta name="rewrite-mode" content="api">
     <meta name="rewrite-endpoint" content="/api/rewrite">
     <title>SayLess — Say what you mean</title>
     <link rel="icon" href="data:,">
@@ -22,7 +22,8 @@
       </section>
       <form id="rewrite-form" class="composer" novalidate>
         <label for="message">Your message</label>
-        <textarea id="message" name="message" placeholder="I need my teammate to finish their part…" aria-describedby="privacy-note" required></textarea>
+        <textarea id="message" name="message" placeholder="I need my teammate to finish their part…" aria-describedby="message-length privacy-note" required></textarea>
+        <p id="message-length" class="field-hint" aria-live="polite"></p>
         <fieldset>
           <legend>Choose your tone</legend>
           <div class="tone-options">
@@ -33,7 +34,7 @@
           </div>
         </fieldset>
         <button id="rewrite-button" type="submit" class="primary-button">Rewrite my message</button>
-        <p id="privacy-note" class="privacy-note">Messages are sent to an AI service to generate rewrites. Please don’t enter sensitive personal information.</p>
+        <p id="privacy-note" class="privacy-note">Messages are sent to Google Gemini to generate rewrites. Google may use free-tier messages and responses to improve its products. Don’t enter sensitive personal information. SayLess doesn’t save your messages. <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Gemini API terms</a></p>
         <p id="mock-notice" class="dev-notice" hidden>Demo mode: shows three fixed sample rewrites after one second. Your message and tone are not sent to an AI service.</p>
       </form>
       <noscript><p>Enable JavaScript to rewrite your message.</p></noscript>
